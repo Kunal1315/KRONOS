@@ -19,6 +19,8 @@ a {
 
 /* Header */
 
+/* Header */
+
 header {
     height: 120px;
     display: flex;
@@ -31,42 +33,41 @@ header {
 }
 
 
+/* Logo */
+
 .logo {
     width: 190px;
     height: auto;
+    object-fit: contain;
 }
 
+
+/* Navigation */
 
 nav {
     display: flex;
+    align-items: center;
     gap: 35px;
 }
 
-
 nav a {
     color: #333;
-    font-size: 18px;
+   font-size: 18px;
     font-weight: 300px;
     padding: 10px 0;
     transition: 0.3s;
 }
 
-
 nav a:hover {
     color: #a17a2b;
 }
 
-nav a.active {
-    color: #a27b28;
-}
 
-nav a.active::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: #a27b28;
+/* Active navigation */
+
+nav a.active {
+    color: #a17a2b;
+    border-bottom: 2px solid #a17a2b;
 }
 
 /* FAQ Banner */

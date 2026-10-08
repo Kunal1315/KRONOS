@@ -17,6 +17,8 @@ a {
 
 /* Header */
 
+/* Header */
+
 header {
     height: 120px;
     display: flex;
@@ -28,19 +30,27 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+
+/* Logo */
+
 .logo {
     width: 190px;
     height: auto;
+    object-fit: contain;
 }
+
+
+/* Navigation */
 
 nav {
     display: flex;
+    align-items: center;
     gap: 35px;
 }
 
 nav a {
     color: #333;
-    font-size: 18px;
+   font-size: 18px;
     font-weight: 300px;
     padding: 10px 0;
     transition: 0.3s;
@@ -48,6 +58,14 @@ nav a {
 
 nav a:hover {
     color: #a17a2b;
+}
+
+
+/* Active navigation */
+
+nav a.active {
+    color: #a17a2b;
+    border-bottom: 2px solid #a17a2b;
 }
 
 
