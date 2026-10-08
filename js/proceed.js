@@ -190,36 +190,69 @@ formBB.addEventListener("submit", function (e) {
     }
 });
 
-// --- Real-Time Input Listener ---
-formBB.addEventListener("input", function (e) {
-    switch (e.target.id) {
-        case "name":
-            checkName();
-            break;
-        case "mobile":
-            checkMobile();
-            break;
-        case "email":
-            checkEmail();
-            break;
-        case "house":
-            checkHouse();
-            break;
-        case "area":
-            checkArea();
-            break;
-        case "city":
-            checkCity();
-            break;
-        case "state":
-            checkState();
-            break;
-        case "pincode":
-            checkPincode();
-            break;
+// --- Submit Listener with LocalStorage ---
+formBB.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let isNameValid = checkName(),
+        isMobileValid = checkMobile(),
+        isEmailValid = checkEmail(),
+        isHouseValid = checkHouse(),
+        isAreaValid = checkArea(),
+        isCityValid = checkCity(),
+        isStateValid = checkState(),
+        isPincodeValid = checkPincode(),
+        isPaymentValid = checkPayment();
+
+    let isFormValid =
+        isNameValid &&
+        isMobileValid &&
+        isEmailValid &&
+        isHouseValid &&
+        isAreaValid &&
+        isCityValid &&
+        isStateValid &&
+        isPincodeValid &&
+        isPaymentValid;
+
+    if (isFormValid) {
+        const selectedPayment = document.querySelector('input[name="payment"]:checked');
+
+        // 1. Create order details object
+        const orderDetails = {
+            orderId: "KRN-" + Math.floor(100000 + Math.random() * 900000),
+            orderDate: new Date().toLocaleDateString("en-IN", {
+                year: "numeric",
+                month: "short",
+                day: "numeric"
+            }),
+            customer: {
+                name: nameBB.value.trim(),
+                mobile: mobileBB.value.trim(),
+                email: emailBB.value.trim()
+            },
+            shippingAddress: {
+                house: houseBB.value.trim(),
+                area: areaBB.value.trim(),
+                city: cityBB.value.trim(),
+                state: stateBB.value.trim(),
+                pincode: pincodeBB.value.trim()
+            },
+            paymentMethod: selectedPayment ? selectedPayment.value : ""
+        };
+
+        // 2. Save latest order for order-success.html display
+        localStorage.setItem("latestOrder", JSON.stringify(orderDetails));
+
+        // 3. Append to user order history list
+        const orderHistory = JSON.parse(localStorage.getItem("kronosOrders")) || [];
+        orderHistory.push(orderDetails);
+        localStorage.setItem("kronosOrders", JSON.stringify(orderHistory));
+
+        // 4. Redirect to confirmation page
+        window.location.href = "order-success.html";
     }
 });
-
 
 formBB.addEventListener("change", function (e) {
     if (e.target.name === "payment") {
