@@ -1,0 +1,626 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #f7f7f7;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.logo {
+    width: 190px;
+    height: auto;
+}
+
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+
+nav a {
+    color: #333;
+    font-size: 15px;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+
+nav a:hover,
+nav a.active {
+    color: #a17a2b;
+}
+
+
+/* Banner */
+
+.track-banner {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("../images/track-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.track-banner-content {
+    color: white;
+}
+
+.track-banner-content p {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+
+.track-banner-content h1 {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+.track-banner-content span {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+/* Track section */
+
+.track-section {
+
+    width: 850px;
+
+    margin: auto;
+
+    padding: 70px 0;
+
+}
+
+
+/* ================= HEADING ================= */
+
+.track-heading {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.track-heading p {
+
+    color: #a17a2b;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.track-heading h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    font-weight: 400;
+
+    margin-bottom: 12px;
+
+}
+
+
+.track-heading span {
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+/* ================= TRACK BOX ================= */
+
+.track-box {
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    padding: 35px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.input-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.input-group label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+
+.input-group input {
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 15px;
+
+    border: 1px solid #ccc;
+
+    outline: none;
+
+    font-size: 14px;
+
+}
+
+
+.input-group input:focus {
+
+    border-color: #a17a2b;
+
+}
+
+
+.track-btn {
+
+    width: 100%;
+
+    height: 48px;
+
+    border: none;
+
+    background-color: #222;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.track-btn:hover {
+
+    background-color: #a17a2b;
+
+}
+
+
+.error {
+
+    color: #c0392b;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    margin-top: 15px;
+
+}
+
+
+/* 
+------------- ORDER RESULT ----------------
+.order-result {
+
+    display: none;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    padding: 35px;
+
+}
+
+
+ --------------- ORDER HEADER -------------- 
+
+.order-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+.order-header p {
+
+    color: #999;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.order-header h3 {
+
+    font-size: 20px;
+
+}
+
+
+.status {
+
+    text-align: right;
+
+}
+
+
+.status span {
+
+    display: block;
+
+    color: #999;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.status strong {
+
+    color: #a17a2b;
+
+    font-size: 14px;
+
+}
+
+
+ ------------- TIMELINE -------------- 
+
+.timeline {
+
+    padding: 35px 10px;
+
+}
+
+
+.timeline-item {
+
+    display: flex;
+
+    position: relative;
+
+    padding-bottom: 35px;
+
+}
+
+
+.timeline-item:last-child {
+
+    padding-bottom: 0;
+
+}
+
+
+.timeline-item:not(:last-child)::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 18px;
+
+    top: 38px;
+
+    width: 2px;
+
+    height: 55px;
+
+    background-color: #ddd;
+
+}
+
+
+.timeline-item.completed:not(:last-child)::after {
+
+    background-color: #a17a2b;
+
+}
+
+
+.timeline-circle {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background-color: #ddd;
+
+    color: #777;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 14px;
+
+    margin-right: 18px;
+
+    flex-shrink: 0;
+
+}
+
+
+.timeline-item.completed .timeline-circle {
+
+    background-color: #a17a2b;
+
+    color: white;
+
+}
+
+
+.timeline-item.active .timeline-circle {
+
+    background-color: #222;
+
+    color: white;
+
+}
+
+
+.timeline-content h3 {
+
+    font-size: 15px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.timeline-content p {
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+
+ ------------- ORDER DETAILS ------------
+
+.order-details {
+
+    border-top: 1px solid #ddd;
+
+    padding-top: 30px;
+
+}
+
+
+.order-details h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    font-weight: 400;
+
+    margin-bottom: 20px;
+
+}
+
+
+.detail-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 13px;
+
+}
+
+
+.detail-row span {
+
+    color: #777;
+
+}
+
+
+.detail-row strong {
+
+    font-weight: 500;
+
+}
+    */
+
+
+/* HELP  */
+
+.track-help {
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 55px 20px;
+}
+
+
+.track-help h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+.track-help p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+
+.track-help a {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 13px 30px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+
+.track-help a:hover {
+    background-color: #a17a2b;
+}
+
+
+/*  Footer  */
+
+footer {
+    background-color: #111;
+    color: white;
+    padding-top: 55px;
+}
+
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 50px;
+    padding-bottom: 45px;
+}
+
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+
+.footer-column h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+
+.footer-column p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+
+.footer-column a {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+
+.footer-column a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    width: 90%;
+    margin: auto;
+    padding: 22px 0;
+    color: #777;
+    font-size: 12px;
+}

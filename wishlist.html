@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRONOS - Wishlist</title>
+    <link rel="stylesheet" href="css/wishlist.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+
+<body>
+
+
+    <!--Header-->
+
+    <header>
+
+        <img src="images/logo.png" alt="KRONOS Logo" class="logo">
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="Login.html">
+                Account
+            </a>
+
+            <a href="wishlist.html" class="active">
+                Wishlist
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+            <a href="track-order.html">
+                Track Order
+            </a>
+
+            <a href="faq.html">
+                FAQ's
+            </a>
+        </nav>
+
+    </header>
+
+
+
+    <!--Banner-->
+
+    <section class="wishlist-banner">
+
+        <div class="wishlist-banner-content">
+
+            <p>
+                KRONOS COLLECTION
+            </p>
+
+            <h1>
+                My Wishlist
+            </h1>
+
+            <span>
+                Save the watches you love for later.
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!--Wishlist section-->
+
+    <main>
+
+        <section class="wishlist-section">
+
+
+            <!--Heading-->
+
+            <div class="wishlist-heading">
+
+                <p>
+                    YOUR FAVOURITES
+                </p>
+
+                <h2>
+                    Wishlist
+                </h2>
+
+                <span id="wishlistCount">
+                    4 items in your wishlist
+                </span>
+
+            </div>
+
+
+
+            <!--Action-->
+
+            <div class="wishlist-actions">
+
+                <button onclick="moveAllToCart()">
+                    Move All To Cart
+                </button>
+
+            </div>
+
+
+
+            <!--Products-->
+
+            <div
+                class="wishlist-products"
+                id="wishlistProducts"
+            >
+
+
+                <!--Product 1-->
+
+                <div class="wishlist-card">
+
+                    <div class="wishlist-image">
+
+                        <span class="discount">
+                            20% OFF
+                        </span>
+
+                        <button class="remove-btn">
+                            ×
+                        </button>
+
+                        <img src="images/watches/rosegold.png" alt="Rose Gold Watch">
+
+                    </div>
+
+
+                    <div class="wishlist-details">
+
+                        <p class="brand">
+                            KRONOS
+                        </p>
+
+                        <h3>
+                            Rose Gold
+                        </h3>
+
+                        <div class="price">
+
+                            <strong>
+                                ₹5,999
+                            </strong>
+
+                            <del>
+                                ₹7,499
+                            </del>
+
+                        </div>
+
+                        <button class="cart-btn">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--Product 2-->
+
+                <div class="wishlist-card">
+
+                    <div class="wishlist-image">
+
+                        <span class="discount">
+                            15% OFF
+                        </span>
+
+                        <button class="remove-btn">
+                            ×
+                        </button>
+
+                        <img src="images/watches/womenpearlelegance.png" alt="Pearl Elegance Watch">
+
+                    </div>
+
+
+                    <div class="wishlist-details">
+
+                        <p class="brand">
+                            KRONOS
+                        </p>
+
+                        <h3>
+                            Pearl Elegance
+                        </h3>
+
+                        <div class="price">
+
+                            <strong>
+                                ₹6,499
+                            </strong>
+
+                            <del>
+                                ₹7,699
+                            </del>
+
+                        </div>
+
+                        <button class="cart-btn">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--Product 3-->
+
+                <div class="wishlist-card">
+
+                    <div class="wishlist-image">
+
+                        <span class="discount">
+                            25% OFF
+                        </span>
+
+                        <button class="remove-btn">
+                            ×
+                        </button>
+
+                        <img src="images/watches/womengoldencharm.png" alt="Golden Charm Watch">
+
+                    </div>
+
+
+                    <div class="wishlist-details">
+
+                        <p class="brand">
+                            KRONOS
+                        </p>
+
+                        <h3>
+                            Golden Charm
+                        </h3>
+
+                        <div class="price">
+
+                            <strong>
+                                ₹6,999
+                            </strong>
+
+                            <del>
+                                ₹8,999
+                            </del>
+
+                        </div>
+
+                        <button class="cart-btn">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--Product 4-->
+
+                <div class="wishlist-card">
+
+                    <div class="wishlist-image">
+
+                        <span class="discount">
+                            18% OFF
+                        </span>
+
+                        <button class="remove-btn">
+                            ×
+                        </button>
+
+                        <img src="images/watches/womensilverpearl.png" alt="Silver Pearl Watch">
+
+                    </div>
+
+
+                    <div class="wishlist-details">
+
+                        <p class="brand">
+                            KRONOS
+                        </p>
+
+                        <h3>
+                            Silver Pearl
+                        </h3>
+
+                        <div class="price">
+
+                            <strong>
+                                ₹5,499
+                            </strong>
+
+                            <del>
+                                ₹6,699
+                            </del>
+
+                        </div>
+
+                        <button class="cart-btn">
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        <!--Wishlist help-->
+
+        <section class="wishlist-help">
+
+            <h2>
+                Looking For Something Special?
+            </h2>
+
+            <p>
+                Explore our latest collection of timeless watches.
+            </p>
+
+            <a href="explore.html">
+                Explore Collection
+            </a>
+
+        </section>
+
+    </main>
+
+
+
+    <!--Footer-->
+
+    <footer>
+
+        <div class="footer-container">
+
+
+            <div class="footer-column">
+
+                <img src="images/logo2.png" alt="KRONOS" class="footer-logo">
+
+                <p>
+                    Timeless watches designed for
+                    every moment of your life.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    SHOP
+                </h3>
+
+                <a href="men.html">
+                    Men's Watches
+                </a>
+
+                <a href="women.html">
+                    Women's Watches
+                </a>
+
+                <a href="explore.html">
+                    Explore Watches
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    CUSTOMER SERVICE
+                </h3>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="track-order.html">
+                    Track Order
+                </a>
+
+                <a href="#">
+                    Returns
+                </a>
+
+                <a href="faq.html">
+                    FAQs
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    CONTACT
+                </h3>
+
+                <p>
+                    📞 1800-123-4567
+                </p>
+
+                <p>
+                    ✉ support@kronos.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 KRONOS. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

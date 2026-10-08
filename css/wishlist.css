@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #f7f7f7;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.logo {
+    width: 190px;
+    height: auto;
+}
+
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+
+nav a {
+    color: #333;
+    font-size: 15px;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+
+nav a:hover,
+nav a.active {
+    color: #a17a2b;
+}
+
+
+/*  Banner */
+
+.wishlist-banner {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) ), url("../images/wishlist-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.wishlist-banner-content {
+    color: white;
+}
+
+
+.wishlist-banner-content p {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+
+.wishlist-banner-content h1 {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+.wishlist-banner-content span {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+/* Wishlist Section */
+.wishlist-section {
+    padding: 70px;
+}
+
+
+/* Heading */
+
+.wishlist-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.wishlist-heading p {
+    color: #a17a2b;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+
+.wishlist-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+
+.wishlist-heading span {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* Actions */
+
+.wishlist-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+
+.wishlist-actions button {
+    border: none;
+    background-color: #222;
+    color: white;
+    padding: 13px 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.wishlist-actions button:hover {
+    background-color: #a17a2b;
+}
+
+
+/* Products */
+
+.wishlist-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* Card */
+
+.wishlist-card {
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+
+.wishlist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Image */
+
+.wishlist-image {
+    height: 320px;
+    background-color: #f5f5f5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wishlist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 25px;
+}
+
+
+/* Discount */
+
+.discount {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #222;
+    color: white;
+    padding: 6px 10px;
+    font-size: 11px;
+    z-index: 2;
+}
+
+
+/* Remove */
+
+.remove-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: #222;
+    font-size: 25px;
+    line-height: 35px;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+
+.remove-btn:hover {
+    background-color: #222;
+    color: white;
+}
+
+
+/* Details */
+
+.wishlist-details {
+    padding: 22px;
+    text-align: center;
+}
+
+
+.brand {
+    color: #999;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+
+.wishlist-details h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+.stars {
+    color: #b78a2c;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+
+/* Price */
+
+.price {
+    margin-bottom: 18px;
+}
+
+
+.price strong {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+
+.price del {
+    color: #999;
+    font-size: 13px;
+}
+
+
+/* Cart Button */
+
+.cart-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background-color: #222;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.cart-btn:hover {
+    background-color: #a17a2b;
+}
+
+
+/* Empty Wishlist */
+
+.empty-wishlist {
+    display: none;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 70px 20px;
+}
+
+
+.empty-icon {
+    font-size: 65px;
+    color: #a17a2b;
+    margin-bottom: 15px;
+}
+
+
+.empty-wishlist h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+
+.empty-wishlist p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+
+.empty-wishlist a {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 13px 30px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+.empty-wishlist a:hover {
+    background-color: #a17a2b;
+}
+
+
+/* Help */
+
+.wishlist-help {
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 55px 20px;
+}
+
+
+.wishlist-help h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+.wishlist-help p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+
+.wishlist-help a {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 13px 30px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+
+.wishlist-help a:hover {
+    background-color: #a17a2b;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #111;
+    color: white;
+    padding-top: 55px;
+}
+
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 50px;
+    padding-bottom: 45px;
+}
+
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+
+.footer-column h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+
+.footer-column p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+
+}
+
+
+.footer-column a {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+
+.footer-column a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    width: 90%;
+    margin: auto;
+    padding: 22px 0;
+    color: #777;
+    font-size: 12px;
+}

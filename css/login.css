@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f6f6;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+
+header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Logo */
+
+.logo {
+    width: 190px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    color: #333;
+   font-size: 18px;
+    font-weight: 300px;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a17a2b;
+}
+
+
+/* Active navigation */
+
+nav a.active {
+    color: #a17a2b;
+    border-bottom: 2px solid #a17a2b;
+}
+
+
+/* Login Container */
+
+.auth-container {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 50px 0;
+}
+
+
+/* Login Box */
+
+.auth-box {
+    width: 430px;
+    background-color: white;
+    padding: 45px 40px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Heading */
+
+.auth-box h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+
+/* KRONOS text */
+
+.auth-box h2 span {
+    color: #a17a2b;
+}
+
+
+/* Description */
+
+.login-text {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+
+/* Form */
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* Input */
+
+.auth-box input {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.auth-box input:focus {
+    border-color: #a17a2b;
+    box-shadow: 0 0 0 1px #a17a2b;
+}
+
+
+/* Login Button */
+
+.auth-box button {
+    width: 100%;
+    height: 48px;
+    border: none;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.auth-box button:hover {
+    background-color: #a17a2b;
+}
+
+
+/* Forgot password */
+
+.forgot {
+    margin-top: 22px;
+}
+
+.forgot a {
+    color: #a17a2b;
+    font-size: 13px;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+.alert-error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #f87171;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.auth-box div small {
+    display: block;
+    color: #dc2626;
+    font-size: 12px;
+    margin-top: 4px;
+    text-align: left;
+}
+
+.auth-box div.error input {
+    border-color: #dc2626;
+}
+
+.auth-box div.success input {
+    border-color: #16a34a;
+}
+
+
+/* Sign up */
+
+.signup-text {
+    margin-top: 25px;
+    color: #777;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #a17a2b;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+.alert-success {
+    display: none;
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}

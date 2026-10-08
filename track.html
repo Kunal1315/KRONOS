@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRONOS - Track Order</title>
+    <link rel="stylesheet" href="css/track.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+
+<body>
+
+
+    <!--header-->
+
+    <header>
+
+        <img src="images/logo.png" alt="KRONOS Logo" class="logo">
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="Login.html">
+                Account
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+            <a href="track-order.html" class="active">
+                Track Order
+            </a>
+
+            <a href="faq.html">
+                FAQ's
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- banner-->
+
+    <section class="track-banner">
+
+        <div class="track-banner-content">
+
+            <p>
+                KRONOS SUPPORT
+            </p>
+
+            <h1>
+                Track Your Order
+            </h1>
+
+            <span>
+                Know where your watch is, every step of the way.
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- track section-->
+
+    <main>
+
+        <section class="track-section">
+
+
+            <div class="track-heading">
+
+                <p>
+                    ORDER TRACKING
+                </p>
+
+                <h2>
+                    Where Is My Order?
+                </h2>
+
+                <span>
+                    Enter your order details to check your delivery status.
+                </span>
+
+            </div>
+
+
+
+            <!--track form-->
+
+            <div class="track-box">
+
+                <div class="input-group">
+
+                    <label>
+                        Order ID
+                    </label>
+
+                    <input type="text" id="orderId" placeholder="Example: KR12345">
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Email Address
+                    </label>
+
+                    <input type="email" id="email" placeholder="Enter your email">
+
+                </div>
+
+
+                <button class="track-btn">
+                    Track Order
+                </button>
+
+
+                <p
+                    class="error"
+                    id="errorMessage"
+                ></p>
+
+            </div>
+
+
+        <!--
+                ------order result-------
+            <div
+                class="order-result"
+                id="orderResult"
+            >
+
+
+                ORDER HEADER   
+
+                <div class="order-header">
+
+                    <div>
+
+                        <p>
+                            ORDER ID
+                        </p>
+
+                        <h3 id="displayOrderId">
+                            KR12345
+                        </h3>
+
+                    </div>
+
+
+                    <div class="status">
+
+                        <span>
+                            CURRENT STATUS
+                        </span>
+
+                        <strong>
+                            Out for Delivery
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                --------timeline----------
+
+                <div class="timeline">
+
+
+                    <div class="timeline-item completed">
+
+                        <div class="timeline-circle">
+                            ✓
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Order Placed
+                            </h3>
+
+                            <p>
+                                Your order has been successfully placed.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item completed">
+
+                        <div class="timeline-circle">
+                            ✓
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Order Confirmed
+                            </h3>
+
+                            <p>
+                                Your order has been confirmed.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item completed">
+
+                        <div class="timeline-circle">
+                            ✓
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Shipped
+                            </h3>
+
+                            <p>
+                                Your watch has been shipped.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item active">
+
+                        <div class="timeline-circle">
+                            🚚
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Out for Delivery
+                            </h3>
+
+                            <p>
+                                Your order is on its way to you.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-circle">
+                            5
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Delivered
+                            </h3>
+
+                            <p>
+                                Your order will be delivered soon.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                ---------------order details----------------
+
+                <div class="order-details">
+
+                    <h2>
+                        Order Details
+                    </h2>
+
+
+                    <div class="detail-row">
+
+                        <span>
+                            Product
+                        </span>
+
+                        <strong>
+                            KRONOS Classic Black Watch
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-row">
+
+                        <span>
+                            Quantity
+                        </span>
+
+                        <strong>
+                            1
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-row">
+
+                        <span>
+                            Order Date
+                        </span>
+
+                        <strong>
+                            04 October 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-row">
+
+                        <span>
+                            Expected Delivery
+                        </span>
+
+                        <strong>
+                            07 October 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-row">
+
+                        <span>
+                            Payment
+                        </span>
+
+                        <strong>
+                            Paid
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section> 
+    -->
+
+
+        <!--Help-->
+
+        <section class="track-help">
+
+            <h2>
+                Need Help With Your Order?
+            </h2>
+
+            <p>
+                Our customer support team is happy to help.
+            </p>
+
+            <a href="#">
+                Contact Us
+            </a>
+
+        </section>
+
+    </main>
+
+
+
+    <!--footer-->
+
+    <footer>
+
+        <div class="footer-container">
+
+
+            <div class="footer-column">
+
+                <img src="images/logo2.png" alt="KRONOS" class="footer-logo">
+
+                <p>
+                    Timeless watches designed for
+                    every moment of your life.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    SHOP
+                </h3>
+
+                <a href="men.html">
+                    Men's Watches
+                </a>
+
+                <a href="women.html">
+                    Women's Watches
+                </a>
+
+                <a href="explore.html">
+                    Explore Watches
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    CUSTOMER SERVICE
+                </h3>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="track.html">
+                    Track Order
+                </a>
+
+                <a href="#">
+                    Returns
+                </a>
+
+                <a href="faq.html">
+                    FAQs
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    CONTACT
+                </h3>
+
+                <p>
+                    📞 1800-123-4567
+                </p>
+
+                <p>
+                    ✉ support@kronos.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 KRONOS. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

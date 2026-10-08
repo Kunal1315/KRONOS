@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRONOS - FAQ</title>
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+
+<body>
+
+
+    <!--header-->
+
+    <header>
+
+        <img
+            src="images/logo.png" alt="KRONOS Logo" class="logo">
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="Login.html">
+                Account
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+            <a href="track.html">
+                Track Order
+            </a>
+
+            <a href="faq.html" class="active">
+                FAQ's
+            </a>
+        </nav>
+
+    </header>
+
+
+
+    <!--FAQ section-->
+
+    <main>
+
+        <section class="faq-section">
+
+
+            <div class="faq-heading">
+
+                <p>
+                    NEED HELP?
+                </p>
+
+                <h2>
+                    How Can We Help You?
+                </h2>
+
+                <span>
+                    Find quick answers about orders, watches,
+                    payments, shipping and returns.
+                </span>
+
+            </div>
+
+
+
+            <!--search-->
+
+            <div class="search-box">
+                    <input type="text" id="searchBox" placeholder="Type your Questions?..." />
+                    <button type="button" class="search-btn">Search</button>
+                </div>
+
+
+
+            <!--FAQ's-->
+
+            <div class="faq-container" id="faqContainer">
+
+                <!-- FAQ 1 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+
+                        <span>
+                            How can I place an order?
+                        </span>
+
+                        <b>
+                            +
+                        </b>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Select the watch you like, click
+                            "Add To Cart", go to the Cart page
+                            and complete the checkout process.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 2 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+
+                        <span>
+                            What payment methods are available?
+                        </span>
+
+                        <b>
+                            +
+                        </b>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            KRONOS supports common payment
+                            methods such as credit cards,
+                            debit cards, UPI and net banking.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 3 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+
+                        <span>
+                            How long does delivery take?
+                        </span>
+
+                        <b>
+                            +
+                        </b>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Orders are generally delivered
+                            within 3 to 7 working days,
+                            depending on the delivery location.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 4 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+
+                        <span>
+                            How can I track my order?
+                        </span>
+
+                        <b>
+                            +
+                        </b>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            You can track your order using
+                            the "Track Order" option in the
+                            navigation menu.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 5 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+
+                        <span>
+                            Can I cancel my order?
+                        </span>
+
+                        <b>
+                            +
+                        </b>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. You can request cancellation
+                            before your order has been shipped.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 6 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+
+                        <span>
+                            Can I return a watch?
+                        </span>
+
+                        <b>
+                            +
+                        </b>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. If the watch meets the return
+                            conditions, you can request a return
+                            within the applicable return period.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 7 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+
+                        <span>
+                            Are KRONOS watches covered by warranty?
+                        </span>
+
+                        <b>
+                            +
+                        </b>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Warranty coverage depends on the
+                            particular watch model. Please check
+                            the warranty information provided
+                            with your watch.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 8 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+
+                        <span>
+                            Are the watches water resistant?
+                        </span>
+
+                        <b>
+                            +
+                        </b>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Water resistance varies by model.
+                            Please check the specifications of
+                            the particular watch before use.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 9 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+
+                        <span>
+                            Can I add a watch to my wishlist?
+                        </span>
+
+                        <b>
+                            +
+                        </b>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. Click the heart icon on a watch
+                            to add it to your wishlist.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAQ 10 -->
+
+                <div class="faq-item">
+
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+
+                        <span>
+                            How can I contact KRONOS support?
+                        </span>
+
+                        <b>
+                            +
+                        </b>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            You can contact our support team
+                            through the Contact Us section or
+                            email us at support@kronos.com.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!--contact-->
+
+        <section class="faq-contact">
+
+            <h2>
+                Still Have Questions?
+            </h2>
+
+            <p>
+                Our support team is here to help you.
+            </p>
+
+            <a href="#">
+                Contact Us
+            </a>
+
+        </section>
+
+    </main>
+
+
+
+    <!--footer-->
+
+    <footer>
+
+        <div class="footer-container">
+
+
+            <div class="footer-column">
+
+                <img src="images/logo2.png"  alt="KRONOS" class="footer-logo">
+
+                <p>
+                    Timeless watches designed for
+                    every moment of your life.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    SHOP
+                </h3>
+
+                <a href="men.html">
+                    Men's Watches
+                </a>
+
+                <a href="women.html">
+                    Women's Watches
+                </a>
+
+                <a href="explore.html">
+                    Explore Watches
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    CUSTOMER SERVICE
+                </h3>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="track.html">
+                    Track Order
+                </a>
+
+                <a href="#">
+                    Returns
+                </a>
+
+                <a href="faq.html">
+                    FAQs
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    CONTACT
+                </h3>
+
+                <p>
+                    📞 1800-123-4567
+                </p>
+
+                <p>
+                    ✉ support@kronos.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 KRONOS. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+<!--Js-->
+    <script>
+       function toggleFAQ(button) {
+        const faqItem = button.closest(".faq-item");
+        const icon = button.querySelector("b");
+        const isOpen = faqItem.classList.contains("active");
+
+        // Close all open FAQs (Accordion mode)
+        document.querySelectorAll(".faq-item").forEach((item) => {
+            item.classList.remove("active");
+            const itemIcon = item.querySelector(".faq-question b");
+            if (itemIcon) itemIcon.textContent = "+";
+        });
+
+        // If it wasn't open, open it and change icon to minus
+        if (!isOpen) {
+            faqItem.classList.add("active");
+            if (icon) icon.textContent = "−";
+        }
+
+    }
+ 
+    </script>
+
+</body>
+
+</html>

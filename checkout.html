@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRONOS - Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+
+<body>
+
+    <header>
+        <!-- Logo -->
+        <img src="images/logo.png" alt="KRONOS logo" class="logo" height="90px" width="220px">
+
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">
+                Home
+            </a>
+            <a href="Login.html">
+                Account
+            </a>
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+            <a href="cart.html">
+                Cart
+            </a>
+            <a href="track.html">
+                Track Order
+            </a>
+
+            <a href="faq.html">
+                FAQ's
+            </a>
+        </nav>
+
+    </header>
+
+    <button>
+        <a href="cart.html">Back to cart</a>
+    </button>
+
+
+    <!-- Checkout -->
+    <main class="checkout-container">
+
+        <h1>Checkout</h1>
+
+        <div class="checkout">
+
+            <!-- Customer Details -->
+            <div class="customer-details">
+
+                <h2>Delivery Details</h2>
+
+                <form id="checkoutForm">
+
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+
+                    <small id="nameError"></small>
+
+
+                    <label>Mobile Number</label>
+                    <input type="text" id="mobile" placeholder="Enter mobile number">
+
+                    <small id="mobileError"></small>
+
+
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter email">
+
+                    <small id="emailError"></small>
+
+
+                    <label>House / Flat No.</label>
+                    <input type="text" id="house" placeholder="House / Flat number">
+
+                    <small id="houseError"></small>
+
+
+                    <label>Street / Area</label>
+                    <input type="text" id="area" placeholder="Street / Area">
+
+                    <small id="areaError"></small>
+
+
+                    <label>City</label>
+                    <input type="text" id="city" placeholder="Enter city">
+
+                    <small id="cityError"></small>
+
+
+                    <label>State</label>
+                    <input type="text" id="state" placeholder="Enter state">
+
+                    <small id="stateError"></small>
+
+
+                    <label>PIN Code</label>
+                    <input type="text" id="pincode" placeholder="Enter PIN code">
+
+                    <small id="pincodeError"></small>
+
+
+                    <h2>Payment Method</h2>
+
+                    <div class="payment">
+
+                        <label>
+                            <input type="radio" name="payment" value="COD">
+                            Cash on Delivery
+                        </label>
+
+                        <label>
+                            <input type="radio" name="payment" value="UPI">
+                            UPI
+                        </label>
+
+                        <label>
+                            <input type="radio" name="payment" value="Card">
+                            Debit / Credit Card
+                        </label>
+
+                    </div>
+
+                    <small id="paymentError"></small>
+
+
+                    <button type="submit">
+                        Place Order
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="orderItems"></div>
+
+                <hr>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">₹17,497</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span>FREE</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span>₹0</span>
+                </div>
+
+                <hr>
+
+                <div class="total">
+                    <span>Total</span>
+                    <span id="total">₹17,497</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/proceed.js"></script>
+
+</body>
+</html>
