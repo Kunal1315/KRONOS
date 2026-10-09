@@ -1,4 +1,3 @@
-// --- DOM Elements ---
 const formBB = document.getElementById("checkoutForm");
 const nameBB = document.getElementById("name");
 const mobileBB = document.getElementById("mobile");
